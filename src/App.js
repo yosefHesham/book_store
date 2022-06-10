@@ -1,11 +1,11 @@
 import React from 'react';
-import Calculator from './components/calculator';
 
 import './App.css';
+import RouteHanlder from './components/routeHandler';
 
 const App = () => (
   <main>
-    <p> Hello React</p>
+    <RouteHanlder />
   </main>
 );
 
