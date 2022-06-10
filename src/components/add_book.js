@@ -5,7 +5,7 @@ const AddBook = () => {
 
   const { title, author } = formState;
   return (
-    <form>
+    <form style={{width:"50%", margin:"10px auto", display:"flex", flexDirection:"column"}}>
       <input
         type="text"
         name="title"
