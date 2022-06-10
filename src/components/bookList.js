@@ -1,26 +1,26 @@
-import React from "react";
-import AddBook from "./add_book";
-import Book from "./book";
+import React from 'react';
+import AddBook from './add_book';
+import Book from './book';
 
 const books = [
   {
-    id: "1",
-    title: "7 Habbits of highly effectiv people",
-    author: "Stephen covey",
+    id: '1',
+    title: '7 Habbits of highly effectiv people',
+    author: 'Stephen covey',
   },
   {
-    id: "2",
-    title: "Thinking fast and slow",
-    author: "Daniel Kahneman",
+    id: '2',
+    title: 'Thinking fast and slow',
+    author: 'Daniel Kahneman',
   },
   {
-    id: "3",
-    title: "Deep Work",
-    author: "Cal newport",
+    id: '3',
+    title: 'Deep Work',
+    author: 'Cal newport',
   },
 ];
 const BookList = () => {
-  const [list, setList] = React.useState(books);
+  const [list] = React.useState(books);
 
   return (
     <div books-wrapper>
@@ -32,9 +32,9 @@ const BookList = () => {
           id={book.id}
         />
       ))}
-      <AddBook/>
+      <AddBook />
     </div>
   );
 };
 
-export default BookList
+export default BookList;

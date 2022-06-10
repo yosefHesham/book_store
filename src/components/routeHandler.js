@@ -8,7 +8,7 @@ const RouteHanlder = () => (
     <Navbar />
     <Routes>
       <Route path="/" element={<BookList />} />
-      <Route path="/categories" element={<Categories/>} />
+      <Route path="/categories" element={<Categories />} />
     </Routes>
   </Router>
 );

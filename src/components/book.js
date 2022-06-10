@@ -1,16 +1,30 @@
-const  Book = (props) => {
+import PropTypes from 'prop-types';
 
-  const {title,author,id} = props;
-  return (<article className="book" style={{
-    display:"flex",
-    width:"60%",
-    margin:"0 auto",
-    justifyContent:"space-between"
-  }}>
+const Book = (props) => {
+  const { title, author } = props;
+  return (
+    <article
+      className="book"
+      style={{
+        display: 'flex',
+        width: '60%',
+        margin: '0 auto',
+        justifyContent: 'space-between',
+      }}
+    >
       <p>
-        {title} by <span>{author}</span> 
+        {title}
+        {' '}
+        by
+        <span>{author}</span>
       </p>
-      <button> Delete Book </button>
-    </article>);
-}
-export default Book
+      <button type="button"> Delete Book </button>
+    </article>
+  );
+};
+
+Book.propTypes = {
+  author: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+export default Book;

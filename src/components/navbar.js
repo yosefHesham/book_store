@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const navStyle = {display:"flex"}
+
+const navStyle = { display: 'flex' };
 
 const Navbar = () => {
   const links = [
@@ -12,14 +13,14 @@ const Navbar = () => {
     {
       id: 2,
       path: '/categories',
-      text:"Categories"
+      text: 'Categories',
     },
-    
+
   ];
   return (
-    <nav className="navBar" style={navStyle} >
+    <nav className="navBar" style={navStyle}>
       <h1> Bookstore CMS </h1>
-      <ul style={{...navStyle,listStyle:"none", columnGap:"2px"}}>
+      <ul style={{ ...navStyle, listStyle: 'none', columnGap: '2px' }}>
         {links.map((link) => (
           <li key={link.id}>
             <Link to={link.path}>
