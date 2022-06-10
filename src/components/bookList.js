@@ -1,4 +1,5 @@
 import React from "react";
+import AddBook from "./add_book";
 import Book from "./book";
 
 const books = [
@@ -31,6 +32,7 @@ const BookList = () => {
           id={book.id}
         />
       ))}
+      <AddBook/>
     </div>
   );
 };
