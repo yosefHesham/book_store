@@ -23,7 +23,6 @@ const BookList = () => {
 
   return (
     <div books-wrapper>
-      <h2>Your Books</h2>
       {list.map((book) => (
         <Book
           key={book.id}
