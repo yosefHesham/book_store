@@ -23,7 +23,7 @@ const BookList = () => {
   const [list] = React.useState(books);
 
   return (
-    <div books-wrapper>
+    <div  className="books-wrapper" >
       {list.map((book) => (
         <Book
           key={book.id}
