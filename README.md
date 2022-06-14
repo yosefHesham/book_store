@@ -1,42 +1,42 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# REACT-Template
+# Bookstore
 
-> Starter template with linters and bable setup for react projects
+> Bookstore is a website for people who are interested in reading books and want to track their reading progress, and create a reading list.
 
 
-# Note:
-this is a usage guide, remove it once you install all requirements
+## Built With
+
+- React js
+- JSX
+- HTML,CSS
+
+
+## Getting Started
 
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-- git
 - npm
+- git
 
-### Setup
-- clone this temp with `git clone https://github.com/yosefHesham/react-temp`
 
 ### Install
-- run `npm init -y`
-- run `npm install` to install dev dependencies
+- clone repo with : `git clone https://github.com/yosefHesham/book_store`
 
 ### Usage
-- run `npm start` to run server.
-- run `npm run build` to prepare for deployment
-
+-  run `npm i`
+- run `npm start` to run the project
 
 
 
 ## Authors
 
-👤 **Yousef Hesham**
+👤 **Author1**
 
-- GitHub: [@yosefHesham](https://github.com/yosefHesham)
-- Twitter: [@yousef](https://twitter.com/Yousef45653478)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yousef-hesham-b132ba179/)
-
+- GitHub: [@githubhandle](https://github.com/yosefHesham)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
