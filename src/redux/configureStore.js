@@ -10,6 +10,6 @@ const bookStoreReducer = combineReducers(
   },
 );
 
-const store = createStore(bookStoreReducer,applyMiddleware(thunk));
+const store = createStore(bookStoreReducer, applyMiddleware(thunk));
 
 export default store;

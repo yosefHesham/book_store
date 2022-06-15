@@ -1,27 +1,9 @@
-import { v4 } from "uuid";
-import { deleteBook, fetchBooks, sendBook } from "../../api_helper";
+import { deleteBook, fetchBooks, sendBook } from '../../api_helper';
 
-const ADD_BOOK = "ADD_BOOK";
-const REMOVE_BOOK = "REMOVE_BOOK";
-const FETCH_BOOKS = "FETCH_BOOKS";
+const ADD_BOOK = 'ADD_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
+const FETCH_BOOKS = 'FETCH_BOOKS';
 
-const initialData = [
-  {
-    id: v4(),
-    title: "7 Habbits of highly effectiv people",
-    author: "Stephen covey",
-  },
-  {
-    id: v4(),
-    title: "Thinking fast and slow",
-    author: "Daniel Kahneman",
-  },
-  {
-    id: v4(),
-    title: "Deep Work",
-    author: "Cal newport",
-  },
-];
 export default function booksReducer(state = [], action) {
   switch (action.type) {
     case ADD_BOOK:
@@ -59,7 +41,6 @@ export const asyncAdd = (book) => async (dispatch) => {
   dispatch(addBook(book));
 };
 export const asyncRemove = (bookId) => async (dispatch) => {
-  console.log(bookId)
   await deleteBook(bookId);
   dispatch(removeBook(bookId));
 };

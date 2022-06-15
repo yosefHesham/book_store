@@ -6,10 +6,10 @@ import Book from './book';
 
 const BookList = () => {
   const dispatch = useDispatch();
-  
-  React.useEffect( ()  => {dispatch(asyncFetch() ) }, [])
+
+  React.useEffect(() => { dispatch(asyncFetch()); }, []);
   const books = useSelector((state) => state.books);
-  
+
   return (
     <div className="books-wrapper">
       {books.map((book) => (
