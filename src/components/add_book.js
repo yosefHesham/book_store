@@ -17,8 +17,7 @@ const AddBook = () => {
   const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (title.trim().length === 0 || title.trim().length === 0) {
-      alert('Please fill missing fields');
+    if (title.trim().length === 0 || author.trim().length === 0) {
       return;
     }
     dispatch(addBook({ id: v4(), title, author }));
