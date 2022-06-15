@@ -33,16 +33,16 @@ export const deleteBook = async (id) => {
   const url = `${baseUrl}/apps/${appId}/books/${id}`;
 
   await fetch(url, {
-    method:"POST",
+    method:"DELETE",
     headers:headers,
-    body:JSON.stringify({item_id:id}),
+    body:JSON.stringify({item_id:id})
   })
 }
 
 export const sendBook = async (book) => {
   const url = `${baseUrl}/apps/${appId}/books`;
 
-  fetch(url, {
+  await fetch(url, {
     method:'POST',
     headers:headers,
     body: JSON.stringify(book),
