@@ -3,11 +3,11 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
 const Book = (props) => {
-  const {  id,title, author } = props;
-  const dispatch = useDispatch()
+  const { id, title, author } = props;
+  const dispatch = useDispatch();
   const handleDelete = () => {
-    dispatch(removeBook(id))
-  }
+    dispatch(removeBook(id));
+  };
   return (
     <article
       className="book"
@@ -33,5 +33,6 @@ const Book = (props) => {
 Book.propTypes = {
   author: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 export default Book;

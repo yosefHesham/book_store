@@ -1,23 +1,23 @@
 import { v4 } from 'uuid';
 
-const ADD_BOOK = "ADD_BOOK";
-const REMOVE_BOOK = "REMOVE_BOOK";
+const ADD_BOOK = 'ADD_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
 
 const initialData = [
   {
     id: v4(),
-    title: "7 Habbits of highly effectiv people",
-    author: "Stephen covey",
+    title: '7 Habbits of highly effectiv people',
+    author: 'Stephen covey',
   },
   {
     id: v4(),
-    title: "Thinking fast and slow",
-    author: "Daniel Kahneman",
+    title: 'Thinking fast and slow',
+    author: 'Daniel Kahneman',
   },
   {
-    id:  v4(),
-    title: "Deep Work",
-    author: "Cal newport",
+    id: v4(),
+    title: 'Deep Work',
+    author: 'Cal newport',
   },
 ];
 export default function booksReducer(state = initialData, action) {

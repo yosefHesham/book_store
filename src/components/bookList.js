@@ -1,10 +1,10 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import AddBook from './add_book';
 import Book from './book';
 
 const BookList = () => {
-  const books = useSelector(state => state.books);
+  const books = useSelector((state) => state.books);
   return (
     <div className="books-wrapper">
       {books.map((book) => (
