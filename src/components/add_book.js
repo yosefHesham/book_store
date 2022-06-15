@@ -1,4 +1,7 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 } from 'uuid';
+import { addBook } from '../redux/books/books';
 
 const AddBook = () => {
   const [formState, setFormState] = React.useState({ title: '', author: '' });
@@ -10,10 +13,22 @@ const AddBook = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+  const dispatch = useDispatch();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (title.trim().length === 0 || author.trim().length === 0) {
+      return;
+    }
+    dispatch(addBook({ id: v4(), title, author }));
+    setFormState({ title: '', author: '' });
+  };
   return (
-    <form style={{
-      width: '50%', margin: '10px auto', display: 'flex', flexDirection: 'column',
-    }}
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        width: '50%', margin: '10px auto', display: 'flex', flexDirection: 'column',
+      }}
     >
       <input
         type="text"

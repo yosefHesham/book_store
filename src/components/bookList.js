@@ -1,30 +1,13 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import AddBook from './add_book';
 import Book from './book';
 
-const books = [
-  {
-    id: '1',
-    title: '7 Habbits of highly effectiv people',
-    author: 'Stephen covey',
-  },
-  {
-    id: '2',
-    title: 'Thinking fast and slow',
-    author: 'Daniel Kahneman',
-  },
-  {
-    id: '3',
-    title: 'Deep Work',
-    author: 'Cal newport',
-  },
-];
 const BookList = () => {
-  const [list] = React.useState(books);
-
+  const books = useSelector((state) => state.books);
   return (
     <div className="books-wrapper">
-      {list.map((book) => (
+      {books.map((book) => (
         <Book
           key={book.id}
           title={book.title}
