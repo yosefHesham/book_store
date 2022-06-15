@@ -51,4 +51,12 @@ const AddBook = () => {
   );
 };
 
+
+const play = () => {
+  return (howtoPlay) => {
+    return howtoPlay;
+  }
+}
+const p = play();
+
 export default AddBook;
