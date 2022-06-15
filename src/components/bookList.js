@@ -5,7 +5,6 @@ import Book from './book';
 
 const BookList = () => {
   const books = useSelector(state => state.books);
-  console.log(books)
   return (
     <div className="books-wrapper">
       {books.map((book) => (

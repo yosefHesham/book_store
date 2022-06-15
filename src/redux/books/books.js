@@ -1,19 +1,21 @@
+import { v4 } from 'uuid';
+
 const ADD_BOOK = "ADD_BOOK";
 const REMOVE_BOOK = "REMOVE_BOOK";
 
 const initialData = [
   {
-    id: "1",
+    id: v4(),
     title: "7 Habbits of highly effectiv people",
     author: "Stephen covey",
   },
   {
-    id: "2",
+    id: v4(),
     title: "Thinking fast and slow",
     author: "Daniel Kahneman",
   },
   {
-    id: "3",
+    id:  v4(),
     title: "Deep Work",
     author: "Cal newport",
   },
