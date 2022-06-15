@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { asyncRemove } from '../redux/books/books';
 
 const Book = (props) => {
   const { id, title, author } = props;
   const dispatch = useDispatch();
+
   const handleDelete = () => {
-    dispatch(removeBook(id));
+    dispatch(asyncRemove(id));
   };
   return (
     <article

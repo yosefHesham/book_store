@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { asyncAdd } from '../redux/books/books';
 
 const AddBook = () => {
   const [formState, setFormState] = React.useState({ title: '', author: '' });
@@ -20,7 +20,9 @@ const AddBook = () => {
     if (title.trim().length === 0 || author.trim().length === 0) {
       return;
     }
-    dispatch(addBook({ id: v4(), title, author }));
+    dispatch(asyncAdd({
+      item_id: v4(), title, author, category: 'Not classified yet',
+    }));
     setFormState({ title: '', author: '' });
   };
   return (
