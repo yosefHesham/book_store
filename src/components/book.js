@@ -1,7 +1,13 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const Book = (props) => {
-  const { title, author } = props;
+  const {  id,title, author } = props;
+  const dispatch = useDispatch()
+  const handleDelete = () => {
+    dispatch(removeBook(id))
+  }
   return (
     <article
       className="book"
@@ -16,9 +22,10 @@ const Book = (props) => {
         {title}
         {' '}
         by
+        {' '}
         <span>{author}</span>
       </p>
-      <button type="button"> Delete Book </button>
+      <button onClick={handleDelete} type="button"> Delete Book </button>
     </article>
   );
 };
