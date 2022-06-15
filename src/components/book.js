@@ -5,8 +5,9 @@ import { removeBook } from '../redux/books/books';
 const Book = (props) => {
   const { id, title, author } = props;
   const dispatch = useDispatch();
+  
   const handleDelete = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBook(item_id));
   };
   return (
     <article

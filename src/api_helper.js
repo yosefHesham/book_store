@@ -22,18 +22,29 @@ const convertToArray = (result) => {
 
   return books;
 };
-const fetchBooks = async () => {
+export const fetchBooks = async () => {
   const url = `${baseUrl}/apps/${appId}/books`;
   const response = await fetch(url);
   const result = await response.json();
   return convertToArray(result);
 };
 
-const deleteBook = async (id) => {
+export const deleteBook = async (id) => {
   const url = `${baseUrl}/apps/${appId}/books/${id}`;
 
   await fetch(url, {
+    method:"POST",
     headers:headers,
     body:JSON.stringify({item_id:id}),
+  })
+}
+
+export const sendBook = async (book) => {
+  const url = `${baseUrl}/apps/${appId}/books`;
+
+  fetch(url, {
+    method:'POST',
+    headers:headers,
+    body: JSON.stringify(book),
   })
 }
