@@ -22,7 +22,7 @@ const buttonStyle = {
   textDecoration: "underline",
 };
 const BookInfo = (props) => {
-  const { title, author, category } = props;
+  const { title, author, category, handleDelete } = props;
 
   return (
     <section className="bookInfo">
@@ -31,7 +31,7 @@ const BookInfo = (props) => {
       <p className="author"> {author} </p>
       <article className="actions">
         {bookActions.map((action) => (
-          <button key={action.id} style={buttonStyle}>
+          <button  key={action.id} style={buttonStyle} onClick={action.text === "Remove"&& handleDelete} >
             {action.text}
           </button>
         ))}
