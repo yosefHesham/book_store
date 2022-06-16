@@ -43,6 +43,7 @@ h1 {
   border: solid 1px #e8e8e8;
   background-color: #fff;
   display: flex;
+  justify-content: space-between;
 }
 
 .bookInfo {
@@ -65,14 +66,74 @@ h1 {
 }
 
 .author {
-  color:#4386bf;
+  color: #4386bf;
   font-weight: 300;
   font-size: 0.875rem;
-
 }
 .actions {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
+}
+
+.bookProgress {
+  display: flex;
+  align-items: center;
+}
+
+.circle-wrap {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #e8e8e8;
+  margin-right: 10px;
+}
+
+.mask .fill {
+  clip: rect(0, 30px, 60px, 0);
+  background-color: #0290ff
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(180deg);
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0, 60px, 60px, 30px);
+}
+
+.circle-wrap .inside-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+  background: #fff;
+  z-index: 1;
+}
+/* 
+.percentWrapper {
+  display: ;
+} */
+.percent {
+  color: var(--black);
+  font-size: 2rem;
+}
+
+.completed {
+  color: var(--black);
+  opacity: .5;
+  font-size: 1 rem;
 }
 

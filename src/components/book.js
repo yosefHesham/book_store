@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { asyncRemove } from "../redux/books/books";
 import BookInfo from "./bookInfo";
+import BookProgress from "./bookProgress";
 
 const Book = (props) => {
   const { id, title, author, category } = props;
@@ -13,6 +14,7 @@ const Book = (props) => {
   return (
     <article className="book">
       <BookInfo title={title} author={author} category={category}></BookInfo>
+      <BookProgress></BookProgress>
     </article>
   );
 };
