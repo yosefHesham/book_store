@@ -52,6 +52,7 @@ h1 {
   margin-left: 15px;
   align-items: flex-start;
   row-gap: 5px;
+  width: 30%;
 }
 .category {
   color: var(--black);
@@ -97,7 +98,6 @@ h1 {
 
 .mask.full,
 .circle .fill {
-  animation: fill ease-in-out 3s;
   transform: rotate(180deg);
 }
 
@@ -135,5 +135,13 @@ h1 {
   color: var(--black);
   opacity: .5;
   font-size: 1 rem;
+}
+
+.line {
+    width: 0.125rem;
+    height: 4.375rem;
+    margin: 1.125rem 3.688rem 0 4.938rem;
+    border: solid 1px #e8e8e8;
+  
 }
 
