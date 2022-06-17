@@ -7,8 +7,15 @@ import Book from './book';
 const BookList = () => {
   const dispatch = useDispatch();
 
-  React.useEffect(() => { dispatch(asyncFetch()); }, []);
   const books = useSelector((state) => state.books);
+  let firstFetch = false;
+  React.useEffect(() => {
+    if (firstFetch) {
+      return;
+    }
+    dispatch(asyncFetch());
+    firstFetch = true;
+  }, []);
 
   return (
     <div className="books-wrapper">
