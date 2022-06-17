@@ -42,7 +42,7 @@ const BookInfo = (props) => {
       </p>
       <article className="actions">
         {bookActions.map((action) => (
-          <button type="button" key={action.id} style={buttonStyle} onClick={action.text === 'Remove' && handleDelete}>
+          <button type="button" key={action.id} style={buttonStyle} onClick={action.text === 'Remove' ? handleDelete : () => {}}>
             {action.text}
           </button>
         ))}
