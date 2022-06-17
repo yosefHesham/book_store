@@ -5,6 +5,7 @@
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+
 :root {
   --black: #121212;
 }
@@ -12,6 +13,7 @@
 body {
   background-color: #f5f6fa;
 }
+
 .navBar {
   background-color: white;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
@@ -27,14 +29,17 @@ body {
   justify-content: space-evenly;
   list-style: none;
 }
-Link {
+
+link {
   text-decoration: none;
 }
+
 h1 {
   font-size: 1.874rem;
   color: #0290ff;
-  font-style: bold;
+  font-weight: bold;
 }
+
 .book {
   width: 75rem;
   margin: 2.313rem 6.25rem 0;
@@ -55,6 +60,7 @@ h1 {
   row-gap: 5px;
   width: 30%;
 }
+
 .category {
   color: var(--black);
   font-weight: bold;
@@ -72,6 +78,7 @@ h1 {
   font-weight: 300;
   font-size: 0.875rem;
 }
+
 .actions {
   display: flex;
   justify-content: space-evenly;
@@ -123,7 +130,8 @@ h1 {
   background: #fff;
   z-index: 1;
 }
-/* 
+
+/*
 .percentWrapper {
   display: ;
 } */
@@ -135,7 +143,7 @@ h1 {
 .completed {
   color: var(--black);
   opacity: 0.5;
-  font-size: 1 rem;
+  font-size: 1rem;
 }
 
 .line {
@@ -159,6 +167,7 @@ hr {
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
+
 .title-input {
   flex-grow: 3;
   margin-left: 10%;
@@ -167,6 +176,7 @@ hr {
 .author-input {
   flex-grow: 2;
 }
+
 .input-submit {
   flex-grow: 2;
   margin-right: 10%;
