@@ -12,6 +12,7 @@
 - React js
 - JSX
 - HTML,CSS
+- Redux
 
 
 ## Getting Started
