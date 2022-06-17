@@ -3,6 +3,8 @@
 # Bookstore
 
 > Bookstore is a website for people who are interested in reading books and want to track their reading progress, and create a reading list.
+![](./bookstore.png)
+
 
 
 ## Built With
