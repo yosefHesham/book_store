@@ -1,17 +1,17 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { v4 } from "uuid";
-import { asyncAdd } from "../redux/books/books";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 } from 'uuid';
+import { asyncAdd } from '../redux/books/books';
 
 const formStyle = {
-  width: "100%",
-  margin: "10px auto",
-  display: "flex",
-  justifyContent: "space-evenly",
-  columnGap: "15px",
+  width: '100%',
+  margin: '10px auto',
+  display: 'flex',
+  justifyContent: 'space-evenly',
+  columnGap: '15px',
 };
 const AddBook = () => {
-  const [formState, setFormState] = React.useState({ title: "", author: "" });
+  const [formState, setFormState] = React.useState({ title: '', author: '' });
 
   const { title, author } = formState;
   const handleChange = (e) => {
@@ -32,18 +32,18 @@ const AddBook = () => {
         item_id: v4(),
         title,
         author,
-        category: "Not classified yet",
-      })
+        category: 'Not classified yet',
+      }),
     );
-    setFormState({ title: "", author: "" });
+    setFormState({ title: '', author: '' });
   };
   return (
     <>
       <h4
         style={{
-          marginTop: "2%",
-          marginBottom: "2%",
-          marginLeft: "10%",
+          marginTop: '2%',
+          marginBottom: '2%',
+          marginLeft: '10%',
         }}
       >
         ADD NEW BOOK

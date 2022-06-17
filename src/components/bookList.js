@@ -21,7 +21,7 @@ const BookList = () => {
           category={book.category}
         />
       ))}
-      <hr/>
+      <hr />
       <AddBook />
     </div>
   );
