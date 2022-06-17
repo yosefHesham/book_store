@@ -21,6 +21,7 @@ const BookList = () => {
           category={book.category}
         />
       ))}
+      <hr/>
       <AddBook />
     </div>
   );

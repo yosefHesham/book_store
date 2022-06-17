@@ -19,6 +19,7 @@ const Chapter = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",
+        
         rowGap: "12px",
       }}
     >
