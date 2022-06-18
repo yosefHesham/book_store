@@ -7,6 +7,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 const navStyle = {
   display: 'flex',
   alignItems: 'center',
+  width: '100%',
+  justifyContent: 'space-between',
 };
 
 library.add(fas);
@@ -32,7 +34,9 @@ const Navbar = () => {
     <nav className="nav-bar" style={navStyle}>
       <ul
         className="nav-list"
-        style={{ ...navStyle, listStyle: 'none', columnGap: '2px' }}
+        style={{
+          ...navStyle, listStyle: 'none', columnGap: '2px', width: '40%',
+        }}
       >
         <h1> Bookstore CMS </h1>
         {links.map((link) => (
@@ -58,10 +62,10 @@ const Navbar = () => {
           color: 'blue',
           border: 'gray solid 1px',
           borderRadius: '50px',
-          scale: '2',
           padding: '5px',
           backgroundColor: 'white',
           boxShadow: '10px rgba(0,0,0,.5)',
+          marginRight: '10%',
         }}
         icon="fas fa-user-circle"
         size="2x"
