@@ -4,8 +4,7 @@ import { v4 } from 'uuid';
 import { asyncAdd } from '../redux/books/books';
 
 const formStyle = {
-  width: '100%',
-  margin: '10px auto',
+  width: '80%',
   display: 'flex',
   justifyContent: 'space-between',
   columnGap: '15px',
@@ -38,12 +37,12 @@ const AddBook = () => {
     setFormState({ title: '', author: '', category: '' });
   };
   return (
-    <>
+    <div style={{width:"80%", paddingBottom:"5%"}}>
       <h4
         style={{
+          padding:0,
           marginTop: '2%',
           marginBottom: '2%',
-          marginLeft: '10%',
         }}
       >
         ADD NEW BOOK
@@ -78,7 +77,7 @@ const AddBook = () => {
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 };
 

@@ -18,7 +18,7 @@ const BookList = () => {
   }, []);
 
   return (
-    <div className="books-wrapper">
+    <div className="books-wrapper d-flex">
       {books.map((book) => (
         <Book
           key={book.item_id}
