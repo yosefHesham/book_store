@@ -7,13 +7,13 @@ const formStyle = {
   width: '100%',
   margin: '10px auto',
   display: 'flex',
-  justifyContent: 'space-evenly',
+  justifyContent: 'space-between',
   columnGap: '15px',
 };
 const AddBook = () => {
   const [formState, setFormState] = React.useState({ title: '', author: '' });
 
-  const { title, author } = formState;
+  const { title, author, category } = formState;
   const handleChange = (e) => {
     setFormState({
       ...formState,
@@ -32,10 +32,10 @@ const AddBook = () => {
         item_id: v4(),
         title,
         author,
-        category: 'Not classified yet',
+        category: category,
       }),
     );
-    setFormState({ title: '', author: '' });
+    setFormState({ title: '', author: '', category: '' });
   };
   return (
     <>
@@ -64,6 +64,14 @@ const AddBook = () => {
           name="author"
           placeholder="Book author"
           value={author}
+          onChange={handleChange}
+        />
+         <input
+          className="category-input input"
+          type="text"
+          name="category"
+          placeholder="Category"
+          value={category}
           onChange={handleChange}
         />
         <button type="submit" className="input-submit">

@@ -7,6 +7,9 @@ const updateProgressStyle = {
   borderRadius: ' 3px',
   backgroundColor: '#0290ff',
   color: 'white',
+  boxShadow:"none",
+  border:"none",
+  cursor:"pointer"
 };
 const UpdateProgress = () => (
   <button
