@@ -47,7 +47,7 @@ h1 {
 
 .books-wrapper {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
   flex-direction: column;
   align-items: center;
   row-gap: 15px;

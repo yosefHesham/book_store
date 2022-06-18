@@ -31,16 +31,16 @@ const AddBook = () => {
         item_id: v4(),
         title,
         author,
-        category: category,
+        category,
       }),
     );
     setFormState({ title: '', author: '', category: '' });
   };
   return (
-    <div style={{width:"80%", paddingBottom:"5%"}}>
+    <div style={{ width: '80%', paddingBottom: '5%' }}>
       <h4
         style={{
-          padding:0,
+          padding: 0,
           marginTop: '2%',
           marginBottom: '2%',
         }}
@@ -65,7 +65,7 @@ const AddBook = () => {
           value={author}
           onChange={handleChange}
         />
-         <input
+        <input
           className="category-input input"
           type="text"
           name="category"
