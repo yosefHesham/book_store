@@ -14,7 +14,7 @@ const BookProgress = () => {
           </div>
         </div>
       </div>
-      <div className="percentWrapper">
+      <div className="percent-wrapper">
         <p className="percent">
           {' '}
           {Math.floor(percent)}

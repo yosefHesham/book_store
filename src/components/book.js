@@ -15,7 +15,7 @@ const Book = (props) => {
     dispatch(asyncRemove(id));
   };
   return (
-    <article className="book">
+    <article className="book d-flex">
       <BookInfo title={title} author={author} category={category} handleDelete={handleDelete} />
       <div style={{
         display: 'flex',

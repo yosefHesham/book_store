@@ -28,7 +28,7 @@ const BookInfo = (props) => {
   } = props;
 
   return (
-    <section className="bookInfo">
+    <section className="book-info d-flex">
       <p className="category">{category}</p>
       <h3 className="title">
         {' '}

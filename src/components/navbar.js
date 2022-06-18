@@ -19,9 +19,9 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="navBar" style={navStyle}>
+    <nav className="nav-bar" style={navStyle}>
       <ul
-        className="navList"
+        className="nav-list"
         style={{ ...navStyle, listStyle: 'none', columnGap: '2px' }}
       >
         <h1> Bookstore CMS </h1>

@@ -51,7 +51,7 @@ const AddBook = () => {
 
       <form onSubmit={handleSubmit} style={formStyle}>
         <input
-          className="title-input"
+          className="title-input input"
           type="text"
           name="title"
           placeholder="Book title"
@@ -59,7 +59,7 @@ const AddBook = () => {
           onChange={handleChange}
         />
         <input
-          className="author-input"
+          className="author-input input"
           type="text"
           name="author"
           placeholder="Book author"

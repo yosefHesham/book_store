@@ -14,7 +14,7 @@ const Chapter = () => {
   const chapNumb = Math.random() * 25;
   return (
     <section
-      className="chapterInfo"
+      className="chapter-info"
       style={{
         display: 'flex',
         flexDirection: 'column',
