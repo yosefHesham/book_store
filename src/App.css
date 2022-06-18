@@ -98,6 +98,7 @@ h1 {
 .actions {
   justify-content: space-evenly;
   margin-top: 10px;
+  column-gap: 5px;
 }
 
 .book-progress {

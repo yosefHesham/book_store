@@ -4,15 +4,15 @@ import React from 'react';
 const bookActions = [
   {
     id: 1,
-    text: 'Comments',
+    text: 'Comments ',
   },
   {
     id: 2,
-    text: 'Remove',
+    text: 'Remove ',
   },
   {
     id: 3,
-    text: 'Edit',
+    text: 'Edit ',
   },
 ];
 const buttonStyle = {
