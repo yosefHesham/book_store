@@ -4,7 +4,7 @@ const BookProgress = () => {
   const percent = Math.random() * 100;
 
   return (
-    <section className="bookProgress">
+    <section className="book-progress d-flex">
       <div className="circle-wrap">
         <div className="circle">
           <div className="mask half">

@@ -40,7 +40,7 @@ const BookInfo = (props) => {
         {author}
         {' '}
       </p>
-      <article className="actions">
+      <article className="actions d-flex">
         {bookActions.map((action) => (
           <button type="button" key={action.id} style={buttonStyle} onClick={action.text === 'Remove' ? handleDelete : () => {}}>
             {action.text}

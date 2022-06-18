@@ -79,14 +79,17 @@ h1 {
   font-size: 0.875rem;
 }
 
-.actions {
+.d-flex {
   display: flex;
+
+}
+
+.actions {
   justify-content: space-evenly;
   margin-top: 10px;
 }
 
-.bookProgress {
-  display: flex;
+.book-progress {
   align-items: center;
 }
 
