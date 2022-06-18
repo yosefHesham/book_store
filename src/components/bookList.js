@@ -7,19 +7,28 @@ import Book from './book';
 const BookList = () => {
   const dispatch = useDispatch();
 
-  React.useEffect(() => { dispatch(asyncFetch()); }, []);
   const books = useSelector((state) => state.books);
+  let firstFetch = false;
+  React.useEffect(() => {
+    if (firstFetch) {
+      return;
+    }
+    dispatch(asyncFetch());
+    firstFetch = true;
+  }, []);
 
   return (
-    <div className="books-wrapper">
+    <div className="books-wrapper d-flex">
       {books.map((book) => (
         <Book
           key={book.item_id}
           title={book.title}
           author={book.author}
           id={book.item_id}
+          category={book.category}
         />
       ))}
+      <hr />
       <AddBook />
     </div>
   );
